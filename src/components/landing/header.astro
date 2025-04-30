@@ -1,34 +1,34 @@
 ---
 import { Image } from 'astro:assets';
-import LogoLosPrimosBlanco from '/LOGO LOS PRIMOS BLANCO (1).png';
-import LosPrimosEdit from '/losprimosedit (2).png';
+//import logoLosPrimos from 'images/LOGO LOS PRIMOS BLANCO (1).png';
+//import fondoHeader from '../../assets/images/losprimosedit (2).png';  // Renombra la imagen si es necesario
 ---
 
 <header class="flex justify-center items-center h-20">
-  <Image
-    src={LogoLosPrimosBlanco}
-    width={80}
-    height={58}
+  <img
+    src="/images/LOGO-LOS-PRIMOS-BLANCO.png"
+    width="80"
+    height="58"
     alt="Logo"
     loading="eager"
   />
 </header>
 
 <div class="relative">
-<Image
-    src={LosPrimosEdit}
+  <img
+    src="/images/losprimosedit.png"
     alt="Header fondo"
     class="img-header"
     loading="eager"
-    width={1200}
-    height={900}
-/>
+    width="1200"
+    height="900"
+  />
 
-  <Image
-    src={LogoLosPrimosBlanco}
+  <img
+    src='/images/LOGO-LOS-PRIMOS-BLANCO.png'
     alt="Logo Los Primos Blanco"
-    width={600}
-    height={195}
+    width="600"
+    height="195"
     class="absolute bottom-8 left-1/2 transform -translate-x-1/2"
     loading="eager"
   />
@@ -40,7 +40,7 @@ import LosPrimosEdit from '/losprimosedit (2).png';
     -webkit-mask-image: radial-gradient(ellipse 100% 70% at center, black 50%, transparent 70%);
 
     width: 100%;
-    height: calc(100vh - 5rem); /* Puedes ajustar 5rem según la altura del header */
+    height: calc(100vh - 5rem); /* Ajusta según la altura del header */
     object-fit: cover;
     display: block;
   }
