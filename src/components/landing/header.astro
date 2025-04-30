@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-//import logoLosPrimos from 'images/LOGO LOS PRIMOS BLANCO (1).png';
-//import fondoHeader from '../../assets/images/losprimosedit (2).png';  // Renombra la imagen si es necesario
+import logo from '../../images/LOGO-LOS-PRIMOS-BLANCO.png';
+import edit from '../../images/losprimosedit.png';
 ---
 
 <header class="flex justify-center items-center h-20">
   <img
-    src="/images/LOGO-LOS-PRIMOS-BLANCO.png"
+    src={logo.src}
     width="80"
     height="58"
     alt="Logo"
@@ -16,7 +16,7 @@ import { Image } from 'astro:assets';
 
 <div class="relative">
   <img
-    src="/images/losprimosedit.png"
+    src={edit.src}
     alt="Header fondo"
     class="img-header"
     loading="eager"
@@ -25,7 +25,7 @@ import { Image } from 'astro:assets';
   />
 
   <img
-    src='/images/LOGO-LOS-PRIMOS-BLANCO.png'
+    src={logo.src}
     alt="Logo Los Primos Blanco"
     width="600"
     height="195"
