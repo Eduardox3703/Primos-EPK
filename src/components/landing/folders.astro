@@ -1,0 +1,63 @@
+---
+import FolderLink from "./folder-link.astro";
+
+const EPK_FOLDERS = [
+    // {
+    //     folderName: "AUDIOS PROMOCIONALES",
+    //     slug: "audios-promocionales",
+    // },
+    {
+        folderName: "FOTOS OFICIALES",
+        slug: "fotos-oficiales",
+    },
+    {
+        folderName: "LOGOTIPO OFICIAL",
+        slug: "logotipo-oficial",
+    },
+    {
+        folderName: "VIDEOS OFICIALES",
+        slug: "videos-oficiales",
+    },
+    // {
+    //     folderName: "TEMAS PROMOCIONALES",
+    //     slug: "temas-promocionales",
+    // },
+    // {
+    //     folderName: "RIDER TÉCNICO",
+    //     slug: "rider-tecnico",
+    // },
+    {
+        folderName: "RIDER TÉCNICO",
+        slug: "rider-tecnico"
+    },
+    {
+        folderName: "BROCHURE",
+        slug: "brochure",
+    },
+    {
+        folderName: "BIOGRAFÍA",
+        slug: "biografia",
+    },
+    // {
+    //     folderName: "OTROS ELEMENTOS",
+    //     slug: "otros-elementos",
+    // },
+];
+---
+
+<section>
+    <h1
+        class="text-center text-2xl md:text-6xl font-bold text-epk-foreground mt-20"
+    >
+        ELECTRONIC PRESS KIT
+    </h1>
+    <div
+        class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 w-full lg:w-[1000px] mx-auto mt-10 px-5 md:px-0"
+    >
+        {
+            EPK_FOLDERS.map((folder) => (
+                <FolderLink folderName={folder.folderName} slug={folder.slug} />
+            ))
+        }
+    </div>
+</section>

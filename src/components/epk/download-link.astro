@@ -1,0 +1,49 @@
+---
+interface Props {
+    name: string;
+    link: string;
+}
+
+const { name, link } = Astro.props;
+---
+
+<div
+    class="flex items-center justify-between border-b border-neutral-800 mt-5 hover:bg-white/5 p-2 rounded"
+>
+    <a
+        class="w-full pr-2 truncate"
+        href={link}
+        download
+        target="_blank"
+        rel="noreferrer noopener"
+    >
+        {name}
+    </a>
+    <a
+        href={link}
+        download
+        class="size-8 bg-white rounded-full flex items-center justify-center shrink-0"
+        target="_blank"
+        rel="noreferrer noopener"
+    >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-download size-5 text-black"
+            ><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+            ></path><polyline points="7 10 12 15 17 10"></polyline><line
+                x1="12"
+                x2="12"
+                y1="15"
+                y2="3"></line></svg
+        >
+        <span class="sr-only">Descargar</span>
+    </a>
+</div>

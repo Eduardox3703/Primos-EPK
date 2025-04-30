@@ -1,0 +1,27 @@
+---
+import DownloadLink from "./download-link.astro";
+
+interface Props {
+    data: {
+        title: string | null;
+        resources: { name: string; link: string }[];
+    }[];
+}
+
+const { data } = Astro.props;
+---
+
+<div class="px-5 md:px-10 max-w-screen-xl mx-auto min-h-[calc(100vh-6rem)] md:min-h-[calc(100vh-19rem)]">
+    {
+        data.map((el, index) => (
+            <div>
+                <h2 class={`font-semibold ${index !== 0 ? "mt-10" : ""}`}>
+                    {el.title}
+                </h2>
+                {el.resources.map((resource) => (
+                    <DownloadLink name={resource.name} link={resource.link} />
+                ))}
+            </div>
+        ))
+    }
+</div>

@@ -1,0 +1,106 @@
+---
+import Apple from "../social-icons/apple.astro";
+import Facebook from "../social-icons/facebook.astro";
+import Instagram from "../social-icons/instagram.astro";
+import Spotify from "../social-icons/spotify.astro";
+import Tiktok from "../social-icons/tiktok.astro";
+import X from "../social-icons/x.astro";
+import Whatsapp from "../social-icons/whatsapp.astro";
+import Youtube from "../social-icons/youtube.astro";
+import IconWrapper from "../social-icons/icon-wrapper.astro";
+import { Image } from 'astro:assets';
+---
+
+<h2
+    class="mt-20 font-bold text-epk-foreground text-center text-2xl md:text-6xl"
+>
+    Management <br />& Booking
+</h2>
+
+<h3 class="text-center mt-5 text-epk-foreground text-3xl font-semibold">
+    MEMO SERRANO
+</h3>
+
+<div
+    class="text-xl font-medium flex flex-col gap-2 justify-center items-center mt-5"
+>
+    <a
+        class="flex items-center gap-1"
+        href="https://wa.me/+528116052537"
+        target="_blank"
+        rel="noreferrer noopener"
+    >
+        <Image
+            src="https://utfs.io/f/2CpGRsZgLXSlIcdS2ZDGmfogQ2ihlLI7ua8SCHr0E93Ujvy5"
+            alt="WhatsApp"
+            width="28"
+            height="28"
+            loading="lazy"
+        />
+        <span>+52 81 1605 2537</span>
+    </a>
+    <div class="flex items-center gap-1">
+        <Image
+            src="https://flagsapi.com/US/shiny/64.png"
+            alt="bandera Estados Unidos"
+            width="28"
+            height="28"
+            loading="lazy"
+        />
+        <span>+1 (310) 903 3408</span>
+    </div>
+    <!--<div class="flex items-center gap-1">-->
+    <!--    <Image-->
+    <!--        src="https://utfs.io/f/2CpGRsZgLXSlR9vXiwItsea310vlXh7ntjEfKpZFOiAP8byc"-->
+    <!--        alt="correo"-->
+    <!--        width="28"-->
+    <!--        height="28"-->
+    <!--        loading="lazy"-->
+    <!--    />-->
+    <!--    <a href="mailto:info@loshh.com.mx">info@loshh.com.mx</a>-->
+    <!--</div>-->
+</div>
+
+<!--<p class="text-center mt-16 font-semibold text-2xl tracking-widest">-->
+<!--    www.loshh.com.mx-->
+<!--</p>-->
+
+<div
+    class="mx-auto flex justify-center items-center flex-wrap gap-5 md:gap-10 mt-10 px-5 md:px-0"
+>
+    <IconWrapper href="https://music.apple.com/mx/artist/los-primos-mx/587842328" name="Apple">
+        <Apple className="fill-black" />
+    </IconWrapper>
+
+    <IconWrapper href="https://open.spotify.com/intl-es/artist/6N4VOBE2wNnRIINe3922Oc?si=JYGg6FyXS5SbHaBft1ZPXg" name="Spotify">
+        <Spotify className="fill-black" />
+    </IconWrapper>
+
+    <IconWrapper href="https://www.instagram.com/primosmx/" name="Instagram">
+        <Instagram className="fill-black" />
+    </IconWrapper>
+
+    <IconWrapper href="https://www.facebook.com/PrimosMX" name="Facebook">
+        <Facebook className="fill-black" />
+    </IconWrapper>
+
+    <IconWrapper href="https://x.com/PrimosMX" name="X">
+        <X className="fill-black" />
+    </IconWrapper>
+
+    <IconWrapper href="https://www.tiktok.com/@primos.mx" name="TikTok">
+        <Tiktok className="fill-black" />
+    </IconWrapper>
+
+    <IconWrapper href="https://whatsapp.com/channel/0029VaDhiPBB4hdY4PNJJy2U" name="Whatsapp">
+        <Whatsapp className="fill-black" />
+    </IconWrapper>
+
+    <IconWrapper href="https://www.youtube.com/@LosPrimosMXOficial/videos" name="YouTube">
+        <Youtube className="fill-black" />
+    </IconWrapper>
+</div>
+
+<p class="mt-10 text-center text-base">
+    Copyright © 2025. Los Primos Mx. Todos los derechos reservados.
+</p>

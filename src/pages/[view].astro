@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {EPK_DATA, EPK_VIEWS_NAMES} from "../../epk-data";
+import EpkView from "../components/epk/epk-view.astro";
+import Footer from "../components/epk/footer.astro";
+
+export function getStaticPaths() {
+    return [
+        // { params: { view: "audios-promocionales" } },
+        { params: { view: "fotos-oficiales" } },
+        { params: { view: "logotipo-oficial" } },
+        { params: { view: "videos-oficiales" } },
+        { params: { view: "rider-tecnico" } },
+        { params: { view: "brochure" } },
+        { params: { view: "biografia" } }
+    ];
+}
+
+const { view } = Astro.params;
+
+const componentInfo = EPK_DATA[view as keyof typeof EPK_DATA];
+---
+
+<Layout title={`Template - ${EPK_VIEWS_NAMES[view]}`}>
+    <h1
+        class="font-bold text-5xl md:text-9xl text-[#ffc419] text-center mb-8 mt-2"
+    >
+        {EPK_VIEWS_NAMES[view]}
+    </h1>
+    <EpkView data={componentInfo} />
+    <Footer />
+</Layout>
