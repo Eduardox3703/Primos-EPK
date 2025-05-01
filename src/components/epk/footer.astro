@@ -1,16 +1,7 @@
 ---
 import { Image } from "astro:assets";
-// Si la imagen está directamente en src/
-//import logo from "..//LOGO-LOS-PRIMOS-BLANCO.png";
-
-// Si la imagen está en src/images/
- import logo from "src/images/logo.png";
-
-// Si la imagen está en src/assets/
-// import logo from "../../assets/LOGO-LOS-PRIMOS-BLANCO.png";
-
-// Si la imagen está en src/assets/images/
-// import logo from "../../assets/images/LOGO-LOS-PRIMOS-BLANCO.png";
+// Import the logo using the correct relative path
+import logo from "../images/logo.png";
 ---
 
 <footer
@@ -20,7 +11,7 @@ import { Image } from "astro:assets";
         src={logo}
         width={80}
         height={58}
-        alt="Latin Power Music Logo"
+        alt="Los Primos Mx Logo"
         loading="eager"
     />
     <p class="text-sm text-center">
