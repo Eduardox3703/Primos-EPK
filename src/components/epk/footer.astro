@@ -1,20 +1,30 @@
 ---
-// No necesitas importar la imagen, ya que está en la carpeta public
-// La carpeta public se sirve directamente en la raíz
+import { Image } from "astro:assets";
+// Si la imagen está directamente en src/
+import logo from "../../LOGO-LOS-PRIMOS-BLANCO.png";
+
+// Si la imagen está en src/images/
+// import logo from "../../images/LOGO-LOS-PRIMOS-BLANCO.png";
+
+// Si la imagen está en src/assets/
+// import logo from "../../assets/LOGO-LOS-PRIMOS-BLANCO.png";
+
+// Si la imagen está en src/assets/images/
+// import logo from "../../assets/images/LOGO-LOS-PRIMOS-BLANCO.png";
 ---
 
 <footer
     class="flex flex-col md:flex-row gap-5 items-center md:justify-between md:px-10 mt-20 w-full mb-4"
 >
-    <img
-        src="/images/LOGO-LOS-PRIMOS-BLANCO.png"
-        width="80"
-        height="58"
+    <Image
+        src={logo}
+        width={80}
+        height={58}
         alt="Latin Power Music Logo"
         loading="eager"
     />
     <p class="text-sm text-center">
-        Copyright © 2025. Los Primo Mx. <br />
+        Copyright © 2025. Los Primos Mx. <br />
         Todos los derechos reservados.
     </p>
 </footer>
