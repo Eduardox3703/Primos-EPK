@@ -127,7 +127,7 @@ export const EPK_DATA = {
     ],
     "logotipo-oficial": [
         {
-            title: null,
+            title: "Primos MX",
             resources: [
                 {
                     name: "LOGO LOS PRIMOS.png",
@@ -136,6 +136,19 @@ export const EPK_DATA = {
                 {
                     name: "LOGO LOS PRIMOS BLANCO.png",
                     link: "https://drive.google.com/file/d/1Z69FiwXP51P-Qi58xxIF1aDx9sI26NeT/view?usp=sharing"
+                },
+            ],
+        },
+        {
+            title: "Los Primos de Durango",
+            resources: [
+                {
+                    name: "LosPrimosdeDGO_gold.png",
+                    link: "https://drive.google.com/file/d/1_dJSYC-Qyo64srG_7HLnWizmE7T5Ic1u/view?usp=sharing",
+                },
+                {
+                    name: "LosPrimosdeDGO.png",
+                    link: "https://drive.google.com/file/d/1AqfrcaxCxLBnpyXcJHi7g2--JotrOoJf/view?usp=sharing"
                 },
             ],
         },
