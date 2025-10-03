@@ -146,7 +146,7 @@ export const EPK_DATA = {
             resources: [
                 {
                     name: "LOS PRIMOSMXRIDER.pdf",
-                    link: "https://9l6qnyfkes.ufs.sh/f/oCuvxwbj7yrx2q0R1Lun0Rje3hU5TWIDNfbVEsPL7aB98Xkc"
+                    link: "https://drive.google.com/file/d/1KNcOI_tSS96LKOz0d1U7ZAUctw_fi51n/view?usp=sharing"
                 }
             ]
         }
