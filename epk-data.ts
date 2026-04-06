@@ -1,6 +1,15 @@
 export const EPK_DATA = {
     "audios-promocionales": [
         {
+            title: "Él Soy Yo",
+            resources: [
+                {
+                    name: "El soy yo.wav",
+                    link: "https://drive.google.com/file/d/1bcLdPymRWXG0AAAyFkZMHbz8P5wGHwIl/view?usp=sharing",
+                },
+            ],
+        },
+        {
             title: "Tu Magia",
             resources: [
                 {
@@ -187,6 +196,15 @@ export const EPK_DATA = {
         },
     ],
     "videos-oficiales": [
+        {
+            title: "Él Soy Yo",
+            resources: [
+                {
+                    name: "LosPrimosDeDurango_ElSoyYo_RRSS_4K.mov",
+                    link: "https://drive.google.com/file/d/1o1X49jzstoPKSXVmpt8BJ5tJYfUA_Ahl/view?usp=sharing",
+                },
+            ],
+        },
         {
             title: "Tu Magia",
             resources: [
